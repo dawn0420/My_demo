@@ -1,18 +1,29 @@
----
-layout: default
-title: 我的Blog
----
-
-<h2>{{ page.title }}</h2>
-
-<p>最新文章</p>
-
-<ul>
-
-{% for post in site.posts %}
-
-<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-
-{% endfor %}
-
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dawn0420</title>
+    <link href="Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div id="header_img"><img src="jieni.PNG"></div>
+        <ul id="header_nav">
+            <li class="li1"><a href="#">首页</a></li>
+            <li class="li1"><a href="#">关于我</a></li>
+            <li class="li1"><a href="#">Python</a></li>
+            <li class="li1"><a href="#">Java</a></li>
+            <li class="li1"><a href="#">JavaScript</a></li>
+        </ul>
+    </div>
+    <div id="container">
+        <div id="notice">
+            <h3 id="ah3">最近没有任何通知</h3>
+        </div>
+        <div id="mainBody">
+            <h1 id="ah1">没有任何内容</h1>
+        </div>
+    </div>
+    <div id="foot">版权@dawn</div>
+</body>
+</html>
